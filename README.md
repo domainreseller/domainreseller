@@ -7,7 +7,7 @@
 <strong>WHMCS</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/whmcs-dna?label=version" alt="Son Sürüm">
 </a><br>
-<a href="https://github.com/domainreseller/whmcs-dna/releases/latest">📥Download</a> | <a href="https://github.com/domainreseller/whmcs-dna/blob/master/README.md">📝Doc</a>
+<a href="https://github.com/domainreseller/whmcs-dna/archive/refs/heads/master.zip">📥Download</a> | <a href="https://github.com/domainreseller/whmcs-dna/blob/master/README.md">📝Doc</a>
 </td>
 <td align="center" width="33%">
 <a href="https://github.com/domainreseller/wisecp-dna">
@@ -15,7 +15,7 @@
 <strong>WiseCP</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/wisecp-dna?label=version" alt="Son Sürüm">
 </a><br>
-<a href="https://github.com/domainreseller/wisecp-dna/releases/latest">📥Download</a> | <a href="https://github.com/domainreseller/wisecp-dna/blob/master/README.md">📝Doc</a>
+<a href="https://github.com/domainreseller/wisecp-dna/archive/refs/heads/master.zip">📥Download</a> | <a href="https://github.com/domainreseller/wisecp-dna/blob/master/README.md">📝Doc</a>
 </td>
 <td align="center" width="33%">
 <a href="https://github.com/domainreseller/blesta-dna">
@@ -23,7 +23,7 @@
 <strong>Blesta</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/blesta-dna?label=version" alt="Son Sürüm">
 </a><br>
-<a href="https://github.com/domainreseller/blesta-dna/releases/latest">📥Download</a> | <a href="https://github.com/domainreseller/blesta-dna/blob/master/README.md">📝Doc</a>
+<a href="https://api.github.com/repos/domainreseller/blesta-dna/zipball/latest">📥Download</a> | <a href="https://github.com/domainreseller/blesta-dna/blob/master/README.md">📝Doc</a>
 </td>
 </tr>
 <tr>
@@ -33,7 +33,7 @@
 <strong>Hostbill</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/hostbill-dna?label=version" alt="Son Sürüm">
 </a><br>
-<a href="https://github.com/domainreseller/hostbill-dna/releases/latest">📥Download</a> | <a href="https://github.com/domainreseller/hostbill-dna/blob/master/README.md">📝Doc</a>
+<a href="https://api.github.com/repos/domainreseller/hostbill-dna/zipball/latest">📥Download</a> | <a href="https://github.com/domainreseller/hostbill-dna/blob/master/README.md">📝Doc</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/php-dna">
@@ -41,7 +41,7 @@
 <strong>PHP Core</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/php-dna?label=version" alt="Son Sürüm">
 </a><br>
-<a href="https://github.com/domainreseller/php-dna/releases/latest">📥Download</a> | <a href="https://github.com/domainreseller/php-dna/blob/master/README.md">📝Doc</a>
+<a href="https://api.github.com/repos/domainreseller/php-dna/zipball/latest">📥Download</a> | <a href="https://github.com/domainreseller/php-dna/blob/master/README.md">📝Doc</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/nodejs-dna">
@@ -49,7 +49,7 @@
 <strong>Node.js</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/nodejs-dna?label=version" alt="Son Sürüm">
 </a><br>
-<a href="https://github.com/domainreseller/nodejs-dna/releases/latest">📥Download</a> | <a href="https://github.com/domainreseller/nodejs-dna/blob/master/README.md">📝Doc</a>
+<a href="https://api.github.com/repos/domainreseller/nodejs-dna/zipball/latest">📥Download</a> | <a href="https://github.com/domainreseller/nodejs-dna/blob/master/README.md">📝Doc</a>
 </td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@
 <strong>Extended WHMCS Addon</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/dna-extended?label=version" alt="Son Sürüm">
 </a><br>
-<a href="https://github.com/domainreseller/dna-extended/releases/latest">📥Download</a> | <a href="https://github.com/domainreseller/dna-extended/blob/master/README.md">📝Doc</a>
+<a href="https://api.github.com/repos/domainreseller/dna-extended/zipball/latest">📥Download</a> | <a href="https://github.com/domainreseller/dna-extended/blob/master/README.md">📝Doc</a>
 </td>
 </tr>
 </table>
