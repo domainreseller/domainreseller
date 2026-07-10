@@ -61,6 +61,7 @@
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/clientexec-dna">
+<img src="assets/clientexec.png" height="100" alt="ClientExec"><br>
 <strong>ClientExec</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/clientexec-dna?label=version" alt="Latest Release">
 </a><br>
@@ -68,6 +69,7 @@
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/fossbilling-dna">
+<img src="assets/fossbilling.png" height="100" alt="FOSSBilling"><br>
 <strong>FOSSBilling</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/fossbilling-dna?label=version" alt="Latest Release">
 </a><br>
@@ -75,6 +77,7 @@
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/hostfact-dna">
+<img src="assets/hostfact.png" height="100" alt="HostFact"><br>
 <strong>HostFact</strong><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/hostfact-dna?label=version" alt="Latest Release">
 </a><br>
