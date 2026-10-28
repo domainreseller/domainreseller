@@ -20,6 +20,18 @@
 
 <img src="./assets/tlds.svg" width="1200" alt="Some of the 830+ extensions you can sell: .com, .net, .org, .com.tr, .xyz, .shop and more.">
 
+## <img src="./assets/h-programs.svg" width="30" height="30" alt=""> Domain, SSL & hosting reseller programs
+
+One Domain Name API account, three reseller programs: sell domain names, SSL certificates and white-label hosting under your own brand.
+
+<img src="./assets/programs.svg" width="1200" alt="One Domain Name API account, three reseller programs: Domain Reseller (830+ TLDs at wholesale prices), SSL Reseller (DV, OV, EV and wildcard certificates) and Reseller Hosting (white-label cPanel and Plesk hosting).">
+
+<p align="center">
+  <a href="https://www.domainnameapi.com/domain-reseller"><img src="./assets/btn-domain-reseller.svg" height="46" alt="Domain Reseller program"></a>
+  <a href="https://www.domainnameapi.com/ssl-reseller"><img src="./assets/btn-ssl-reseller.svg" height="46" alt="SSL Reseller program"></a>
+  <a href="https://www.domainnameapi.com/reseller-hosting"><img src="./assets/btn-reseller-hosting.svg" height="46" alt="Reseller Hosting program"></a>
+</p>
+
 ## <img src="./assets/h-flow.svg" width="30" height="30" alt=""> How the domain reseller API works
 
 <img src="./assets/flow.svg" width="1200" alt="Your customers order on your site, your billing panel sends the request through the DNA module to Domain Name API, and Domain Name API talks to the registries over EPP.">
@@ -137,7 +149,7 @@ const domains = await api.CheckAvailability(['hello', 'world'], ['com', 'net'], 
 
 ## <img src="./assets/h-ssl.svg" width="30" height="30" alt=""> SSL & reseller hosting modules
 
-Sell more than domains: SSL certificates and cPanel / Plesk reseller hosting from the same account.
+Sell more than domains: modules for our [SSL Reseller](https://www.domainnameapi.com/ssl-reseller) and [Reseller Hosting](https://www.domainnameapi.com/reseller-hosting) programs, with SSL certificates and cPanel / Plesk hosting from the same account.
 
 <table>
 <tr>
