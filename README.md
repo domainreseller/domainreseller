@@ -102,7 +102,7 @@ Registrar modules that connect your billing panel to Domain Name API, so your cu
 
 ## <img src="./assets/h-sdk.svg" width="30" height="30" alt=""> Domain reseller API libraries
 
-Building your own integration? Call the domain reseller API directly with our PHP, Node.js and Ruby libraries.
+Building your own integration? Call the domain reseller API directly with our PHP, Node.js, Ruby and Python libraries.
 
 <table>
 <tr>
@@ -118,11 +118,19 @@ Building your own integration? Call the domain reseller API directly with our PH
 <a href="https://github.com/domainreseller/nodejs-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/nodejs-dna#readme">📝 Docs</a><br>
 <code>npm install nodejs-dna</code>
 </td>
+</tr>
+<tr>
 <td align="center">
 <a href="https://github.com/domainreseller/ruby-dna"><img src="./assets/card-ruby.svg" width="248" alt="Ruby gem for the domain reseller API"></a><br>
 <img src="https://img.shields.io/gem/v/domainnameapi?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://rubygems.org/gems/domainnameapi">📥 Download</a> · <a href="https://github.com/domainreseller/ruby-dna#readme">📝 Docs</a><br>
 <code>gem install domainnameapi</code>
+</td>
+<td align="center">
+<a href="https://github.com/domainreseller/python-dna"><img src="./assets/card-python.svg" width="248" alt="Python library for the domain reseller API"></a><br>
+<img src="https://img.shields.io/pypi/v/domainnameapi?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
+<a href="https://pypi.org/project/domainnameapi/">📥 Download</a> · <a href="https://github.com/domainreseller/python-dna#readme">📝 Docs</a><br>
+<code>pip install domainnameapi</code>
 </td>
 </tr>
 </table>
@@ -162,6 +170,19 @@ require 'domainnameapi'
 dna = DomainNameApi::Client.new('xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', 'your-api-key')
 
 dna.check_availability(['hello', 'world123x0'], ['com', 'net'], 1, 'create')
+```
+
+</details>
+
+<details>
+<summary><b>Quick start: Python</b></summary>
+
+```python
+from domainnameapi import DomainNameAPI
+
+dna = DomainNameAPI("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "your-api-key")
+
+dna.check_availability(["hello", "world123x0"], ["com", "net"], 1, "create")
 ```
 
 </details>
@@ -249,7 +270,7 @@ In your Domain Name API panel under <b>API Settings</b>. Your panel login detail
 <details>
 <summary><b>Can I test before going live?</b></summary>
 <br>
-Yes. The <a href="https://github.com/domainreseller/php-dna">PHP</a>, <a href="https://github.com/domainreseller/nodejs-dna">Node.js</a> and <a href="https://github.com/domainreseller/ruby-dna">Ruby</a> libraries can connect to the test (OTE) environment; see their docs for the switch.
+Yes. The <a href="https://github.com/domainreseller/php-dna">PHP</a>, <a href="https://github.com/domainreseller/nodejs-dna">Node.js</a>, <a href="https://github.com/domainreseller/ruby-dna">Ruby</a> and <a href="https://github.com/domainreseller/python-dna">Python</a> libraries can connect to the test (OTE) environment; see their docs for the switch.
 </details>
 
 ## <img src="./assets/h-connect.svg" width="30" height="30" alt=""> Connect
