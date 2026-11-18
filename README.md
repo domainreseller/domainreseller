@@ -46,7 +46,7 @@ Registrar modules that connect your billing panel to Domain Name API, so your cu
 > [!WARNING]
 > Do **not** use GitHub's green **Code → Download ZIP** button; it downloads the untested development branch.
 
-<table>
+<table align="center">
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/whmcs-dna"><img src="./assets/card-whmcs.svg" width="248" alt="WHMCS domain reseller module"></a><br>
@@ -104,42 +104,48 @@ Registrar modules that connect your billing panel to Domain Name API, so your cu
 
 Building your own integration? Call the domain reseller API directly with our PHP, Node.js, Ruby, Python and Go libraries.
 
-<table>
+<table align="center">
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/php-dna"><img src="./assets/card-php.svg" width="248" alt="PHP library for the domain reseller API"></a><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/php-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
-<a href="https://github.com/domainreseller/php-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/php-dna#readme">📝 Docs</a><br>
-<code>composer require domainreseller/php-dna</code>
+<a href="https://github.com/domainreseller/php-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/php-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/nodejs-dna"><img src="./assets/card-nodejs.svg" width="248" alt="Node.js library for the domain reseller API"></a><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/nodejs-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
-<a href="https://github.com/domainreseller/nodejs-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/nodejs-dna#readme">📝 Docs</a><br>
-<code>npm install nodejs-dna</code>
+<a href="https://github.com/domainreseller/nodejs-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/nodejs-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/ruby-dna"><img src="./assets/card-ruby.svg" width="248" alt="Ruby gem for the domain reseller API"></a><br>
 <img src="https://img.shields.io/gem/v/domainnameapi?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
-<a href="https://rubygems.org/gems/domainnameapi">📥 Download</a> · <a href="https://github.com/domainreseller/ruby-dna#readme">📝 Docs</a><br>
-<code>gem install domainnameapi</code>
+<a href="https://rubygems.org/gems/domainnameapi">📥 Download</a> · <a href="https://github.com/domainreseller/ruby-dna#readme">📝 Docs</a>
 </td>
 </tr>
+</table>
+
+<table align="center">
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/python-dna"><img src="./assets/card-python.svg" width="248" alt="Python library for the domain reseller API"></a><br>
 <img src="https://img.shields.io/pypi/v/domainnameapi?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
-<a href="https://pypi.org/project/domainnameapi/">📥 Download</a> · <a href="https://github.com/domainreseller/python-dna#readme">📝 Docs</a><br>
-<code>pip install domainnameapi</code>
+<a href="https://pypi.org/project/domainnameapi/">📥 Download</a> · <a href="https://github.com/domainreseller/python-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/go-dna"><img src="./assets/card-go.svg" width="248" alt="Go SDK for the domain reseller API"></a><br>
 <img src="https://img.shields.io/github/v/release/domainreseller/go-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
-<a href="https://github.com/domainreseller/go-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/go-dna#readme">📝 Docs</a><br>
-<code>go get github.com/domainreseller/go-dna</code>
+<a href="https://github.com/domainreseller/go-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/go-dna#readme">📝 Docs</a>
 </td>
 </tr>
 </table>
+
+```bash
+composer require domainreseller/php-dna   # PHP
+npm install nodejs-dna                    # Node.js
+gem install domainnameapi                 # Ruby
+pip install domainnameapi                 # Python
+go get github.com/domainreseller/go-dna   # Go
+```
 
 <details>
 <summary><b>Quick start: PHP</b></summary>
@@ -210,7 +216,7 @@ result := client.CheckAvailability([]string{"hello", "world123x0"}, []string{"co
 
 Sell more than domains: modules for our [SSL Reseller](https://www.domainnameapi.com/ssl-reseller) and [Reseller Hosting](https://www.domainnameapi.com/reseller-hosting) programs, with SSL certificates and cPanel / Plesk hosting from the same account.
 
-<table>
+<table align="center">
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/whmcs-ssl-dna"><img src="./assets/card-ssl-whmcs.svg" width="248" alt="DNA SSL for WHMCS"></a><br>
