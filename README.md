@@ -5,15 +5,24 @@
   Every animation on this page is a hand-made SVG in ./assets. No external widgets, no trackers.
 -->
 
+<p align="center">
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-TR.md"><img src="./assets/lang-tr.svg" height="38" alt="Türkçe"></a>
+  <a href="https://github.com/domainreseller"><img src="./assets/lang-en-on.svg" height="38" alt="English"></a>
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-DE.md"><img src="./assets/lang-de.svg" height="38" alt="Deutsch"></a>
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-SA.md"><img src="./assets/lang-sa.svg" height="38" alt="العربية"></a>
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-NL.md"><img src="./assets/lang-nl.svg" height="38" alt="Nederlands"></a>
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-AZ.md"><img src="./assets/lang-az.svg" height="38" alt="Azərbaycanca"></a>
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-CN.md"><img src="./assets/lang-cn.svg" height="38" alt="中文"></a>
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-FR.md"><img src="./assets/lang-fr.svg" height="38" alt="Français"></a>
+  <a href="https://github.com/domainreseller/domainreseller/blob/main/README-IT.md"><img src="./assets/lang-it.svg" height="38" alt="Italiano"></a>
+</p>
+
 <a href="https://www.domainnameapi.com/domain-reseller"><img src="./assets/hero.svg" width="1200" alt="Domain Name API: become a domain reseller. Sell 830+ domain extensions under your own brand with the REST API and ready-made modules for WHMCS, WiseCP, Blesta and more."></a>
 
 <h1 align="center">Domain Reseller API &amp; Modules</h1>
 
 <p align="center">
-  <b>Domain Name API</b> is an ICANN-accredited registrar and <b>domain reseller</b> program founded by <a href="https://www.atakdomain.com">Atak Domain</a>.
-  Join <a href="https://www.domainnameapi.com/domain-reseller">40,000+ domain resellers in 200+ countries</a>, sell 830+ domain extensions under your own brand
-  and automate registration, transfer and renewal with our <a href="https://www.domainnameapi.com/api-integration">domain reseller API</a>
-  or the ready-made modules for WHMCS, WiseCP, Blesta, HostBill, ClientExec, FOSSBilling and HostFact below.
+  <b>Domain Name API</b> is an ICANN-accredited registrar and <b>domain reseller</b> program founded by <a href="https://www.atakdomain.com">Atak Domain</a>. Join <a href="https://www.domainnameapi.com/domain-reseller">40,000+ domain resellers in 200+ countries</a>, sell 830+ domain extensions under your own brand and automate registration, transfer and renewal with our <a href="https://www.domainnameapi.com/api-integration">domain reseller API</a> or the ready-made modules for WHMCS, WiseCP, Blesta, HostBill, ClientExec, FOSSBilling and HostFact below.
 </p>
 
 <img src="./assets/stats.svg" width="1200" alt="830+ TLDs, 40K+ active domain resellers, 200+ countries, 20+ years of experience.">
@@ -50,51 +59,51 @@ Registrar modules that connect your billing panel to Domain Name API, so your cu
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/whmcs-dna"><img src="./assets/card-whmcs.svg" width="248" alt="WHMCS domain reseller module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/whmcs-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/whmcs-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/whmcs-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/whmcs-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/wisecp-dna-v5"><img src="./assets/card-wisecp5.svg" width="248" alt="WiseCP 5 domain reseller module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/wisecp-dna-v5?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/wisecp-dna-v5?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/wisecp-dna-v5/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/wisecp-dna-v5#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/wisecp-dna"><img src="./assets/card-wisecp.svg" width="248" alt="WiseCP 3.x domain reseller module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/wisecp-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/wisecp-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/wisecp-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/wisecp-dna#readme">📝 Docs</a>
 </td>
 </tr>
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/blesta-dna"><img src="./assets/card-blesta.svg" width="248" alt="Blesta domain reseller module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/blesta-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/blesta-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/blesta-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/blesta-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/hostbill-dna"><img src="./assets/card-hostbill.svg" width="248" alt="HostBill domain reseller module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/hostbill-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/hostbill-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/hostbill-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/hostbill-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/clientexec-dna"><img src="./assets/card-clientexec.svg" width="248" alt="ClientExec domain reseller plugin"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/clientexec-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/clientexec-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/clientexec-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/clientexec-dna#readme">📝 Docs</a>
 </td>
 </tr>
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/fossbilling-dna"><img src="./assets/card-fossbilling.svg" width="248" alt="FOSSBilling domain reseller module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/fossbilling-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/fossbilling-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/fossbilling-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/fossbilling-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/hostfact-dna"><img src="./assets/card-hostfact.svg" width="248" alt="HostFact domain reseller module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/hostfact-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/hostfact-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/hostfact-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/hostfact-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/dna-extended"><img src="./assets/card-extended.svg" width="248" alt="Extended WHMCS addon module"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/dna-extended?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/dna-extended?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/dna-extended/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/dna-extended#readme">📝 Docs</a>
 </td>
 </tr>
@@ -108,16 +117,16 @@ Building your own integration? Call the domain reseller API directly with our PH
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/php-dna"><img src="./assets/card-php.svg" width="248" alt="PHP library for the domain reseller API"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/php-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/php-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/php-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/php-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/nodejs-dna"><img src="./assets/card-nodejs.svg" width="248" alt="Node.js library for the domain reseller API"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/nodejs-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/nodejs-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/nodejs-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/nodejs-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
-<a href="https://github.com/domainreseller/ruby-dna"><img src="./assets/card-ruby.svg" width="248" alt="Ruby gem for the domain reseller API"></a><br>
+<a href="https://github.com/domainreseller/ruby-dna"><img src="./assets/card-ruby.svg" width="248" alt="Ruby library for the domain reseller API"></a><br>
 <img src="https://img.shields.io/gem/v/domainnameapi?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://rubygems.org/gems/domainnameapi">📥 Download</a> · <a href="https://github.com/domainreseller/ruby-dna#readme">📝 Docs</a>
 </td>
@@ -132,8 +141,8 @@ Building your own integration? Call the domain reseller API directly with our PH
 <a href="https://pypi.org/project/domainnameapi/">📥 Download</a> · <a href="https://github.com/domainreseller/python-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
-<a href="https://github.com/domainreseller/go-dna"><img src="./assets/card-go.svg" width="248" alt="Go SDK for the domain reseller API"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/go-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<a href="https://github.com/domainreseller/go-dna"><img src="./assets/card-go.svg" width="248" alt="Go library for the domain reseller API"></a><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/go-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/go-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/go-dna#readme">📝 Docs</a>
 </td>
 </tr>
@@ -220,24 +229,24 @@ Sell more than domains: modules for our [SSL Reseller](https://www.domainnameapi
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/whmcs-ssl-dna"><img src="./assets/card-ssl-whmcs.svg" width="248" alt="DNA SSL for WHMCS"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/whmcs-ssl-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/whmcs-ssl-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/whmcs-ssl-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/whmcs-ssl-dna#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/wisecp-ssl-dna"><img src="./assets/card-ssl-wisecp.svg" width="248" alt="DNA SSL for WiseCP 5"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/wisecp-ssl-dna?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/wisecp-ssl-dna?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/wisecp-ssl-dna/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/wisecp-ssl-dna#readme">📝 Docs</a>
 </td>
 </tr>
 <tr>
 <td align="center">
 <a href="https://github.com/domainreseller/reseller-hosting-whmcs"><img src="./assets/card-hosting-whmcs.svg" width="248" alt="DNA Reseller Hosting for WHMCS"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/reseller-hosting-whmcs?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/reseller-hosting-whmcs?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/reseller-hosting-whmcs/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/reseller-hosting-whmcs#readme">📝 Docs</a>
 </td>
 <td align="center">
 <a href="https://github.com/domainreseller/reseller-hosting-wisecp"><img src="./assets/card-hosting-wisecp.svg" width="248" alt="DNA Reseller Hosting for WiseCP"></a><br>
-<img src="https://img.shields.io/github/v/release/domainreseller/reseller-hosting-wisecp?label=version&style=flat-square&color=12B385" alt="Latest release"><br>
+<img src="https://img.shields.io/github/v/release/domainreseller/reseller-hosting-wisecp?label=version&style=flat-square&color=12B385" alt="Latest version"><br>
 <a href="https://github.com/domainreseller/reseller-hosting-wisecp/releases/latest">📥 Download</a> · <a href="https://github.com/domainreseller/reseller-hosting-wisecp#readme">📝 Docs</a>
 </td>
 </tr>
