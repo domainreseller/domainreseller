@@ -51,12 +51,21 @@ curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/ins
 
 # الربط بـ Claude Code (ابدأ في بيئة الاختبار OTE)
 claude mcp add dna -- dna mcp serve --env ote
+
+# أو شغّل dna فقط لفتح الواجهة التفاعلية
+dna
 ```
 
 ```powershell
 # التثبيت على Windows (PowerShell)
 irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
 ```
+
+### جديد في v1.1: اكتب `dna` فقط
+
+تتحقق الواجهة التفاعلية من الأسماء فوريًا أثناء الكتابة، وتتيح لك إدارة نطاقاتك من القوائم، وترافقك خطوة بخطوة في التسجيل والتجديد. كل عملية شراء تنتظر موافقتك، ويقوم خيار **Connect an AI agent** بإعداد Claude Code و ChatGPT و Cursor وأكثر من 20 وكيل ذكاء اصطناعي آخر ببضع ضغطات.
+
+<a href="https://github.com/domainreseller/cli#interactive-shell"><img src="./assets/cli-shell-sa.svg" width="1200" alt="الواجهة التفاعلية لـ dna: عند كتابة acme تظهر الامتدادات المتاحة مع أسعارها، يختار المستخدم acme.net ويملأ نموذج تسجيل قصيرًا ويؤكد الخطوة المدفوعة في نافذة التأكيد فيُسجَّل النطاق."></a>
 
 ### موجّهات جاهزة لـ Claude وChatGPT
 

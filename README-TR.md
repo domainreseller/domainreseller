@@ -51,12 +51,21 @@ curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/ins
 
 # Claude Code'a bağlayın (önce OTE test ortamında başlayın)
 claude mcp add dna -- dna mcp serve --env ote
+
+# Ya da etkileşimli kabuk için sadece dna yazın
+dna
 ```
 
 ```powershell
 # Windows kurulumu (PowerShell)
 irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
 ```
+
+### v1.1’de yeni: sadece `dna` yazın
+
+Etkileşimli kabuk, siz yazarken alan adlarını canlı sorgular, alan adlarınızı menülerden yönetmenizi sağlar ve kayıt ile yenilemede size adım adım eşlik eder. Her satın alma onayınızı bekler; **Connect an AI agent** ise Claude Code, ChatGPT, Cursor ve 20’den fazla AI ajanını birkaç tuşla kurar.
+
+<a href="https://github.com/domainreseller/cli#interactive-shell"><img src="./assets/cli-shell-tr.svg" width="1200" alt="dna etkileşimli kabuğu: acme yazınca boş uzantılar fiyatlarıyla görünür, kullanıcı acme.net’i seçer, kısa kayıt formunu doldurur, ücretli adımı onay kutusunda onaylar ve alan adı kaydedilir."></a>
 
 ### Claude ve ChatGPT için hazır promptlar
 

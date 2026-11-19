@@ -51,12 +51,21 @@ curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/ins
 
 # Connect Claude Code (start in the OTE test environment)
 claude mcp add dna -- dna mcp serve --env ote
+
+# Or simply run dna for the interactive shell
+dna
 ```
 
 ```powershell
 # Install on Windows (PowerShell)
 irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
 ```
+
+### New in v1.1: just type `dna`
+
+The interactive shell checks names live while you type, lets you manage your domains from menus and walks you through registrations and renewals. Every purchase waits for your OK, and **Connect an AI agent** sets up Claude Code, ChatGPT, Cursor and 20+ other agents in a few keystrokes.
+
+<a href="https://github.com/domainreseller/cli#interactive-shell"><img src="./assets/cli-shell.svg" width="1200" alt="The dna interactive shell: typing acme shows which extensions are free with their prices, the user picks acme.net, fills a short registration form, confirms the billable step in a confirmation box and the domain is registered."></a>
 
 ### Ready-made prompts for Claude and ChatGPT
 

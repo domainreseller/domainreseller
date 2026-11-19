@@ -51,12 +51,21 @@ curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/ins
 
 # 连接 Claude Code（建议先在 OTE 测试环境中使用）
 claude mcp add dna -- dna mcp serve --env ote
+
+# 或者直接运行 dna，打开交互式终端
+dna
 ```
 
 ```powershell
 # 在 Windows 上安装（PowerShell）
 irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
 ```
+
+### v1.1 新功能：只需输入 `dna`
+
+交互式终端会在你输入时实时查询名称，让你通过菜单管理域名，并一步步引导你完成注册和续费。每一笔购买都会等待你的确认，**Connect an AI agent** 只需几次按键即可配置 Claude Code、ChatGPT、Cursor 以及 20 多个其他 AI 智能体。
+
+<a href="https://github.com/domainreseller/cli#interactive-shell"><img src="./assets/cli-shell-cn.svg" width="1200" alt="dna 交互式终端：输入 acme 即显示可注册的后缀及价格，用户选择 acme.net，填写简短的注册表单，在确认对话框中确认付费步骤，域名注册完成。"></a>
 
 ### 适用于 Claude 和 ChatGPT 的现成提示词
 

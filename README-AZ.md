@@ -51,12 +51,21 @@ curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/ins
 
 # Claude Code-a qoşun (əvvəlcə OTE test mühitində başlayın)
 claude mcp add dna -- dna mcp serve --env ote
+
+# Və ya interaktiv shell üçün sadəcə dna yazın
+dna
 ```
 
 ```powershell
 # Windows-da quraşdırma (PowerShell)
 irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
 ```
+
+### v1.1-də yeni: sadəcə `dna` yazın
+
+İnteraktiv shell siz yazarkən adları canlı yoxlayır, domenlərinizi menyulardan idarə etməyə imkan verir və qeydiyyat ilə yeniləmədə sizi addım-addım aparır. Hər alış təsdiqinizi gözləyir, **Connect an AI agent** isə Claude Code, ChatGPT, Cursor və 20-dən çox digər AI agentini bir neçə düymə ilə quraşdırır.
+
+<a href="https://github.com/domainreseller/cli#interactive-shell"><img src="./assets/cli-shell-az.svg" width="1200" alt="dna interaktiv shell: acme yazanda boş uzantılar qiymətləri ilə görünür, istifadəçi acme.net-i seçir, qısa qeydiyyat formasını doldurur, ödənişli addımı təsdiq pəncərəsində təsdiqləyir və domen qeydiyyatdan keçir."></a>
 
 ### Claude və ChatGPT üçün hazır promptlar
 
