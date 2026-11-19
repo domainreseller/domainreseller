@@ -25,9 +25,121 @@
   <b>Domain Name API</b> is an ICANN-accredited registrar and <b>domain reseller</b> program founded by <a href="https://www.atakdomain.com">Atak Domain</a>. Join <a href="https://www.domainnameapi.com/domain-reseller">40,000+ domain resellers in 200+ countries</a>, sell 830+ domain extensions under your own brand and automate registration, transfer and renewal with our <a href="https://www.domainnameapi.com/api-integration">domain reseller API</a> or the ready-made modules for WHMCS, WiseCP, Blesta, HostBill, ClientExec, FOSSBilling and HostFact below.
 </p>
 
+<p align="center">
+  <a href="https://github.com/domainreseller/cli"><img src="./assets/cli-ribbon.svg" width="760" alt="New: dna, the Domain Name API CLI and MCP server. Manage domains from your terminal, Claude Code, Cursor and Codex."></a>
+</p>
+
 <img src="./assets/stats.svg" width="1200" alt="830+ TLDs, 40K+ active domain resellers, 200+ countries, 20+ years of experience.">
 
 <img src="./assets/tlds.svg" width="1200" alt="Some of the 830+ extensions you can sell: .com, .net, .org, .com.tr, .xyz, .shop and more.">
+
+## <img src="./assets/h-cli.svg" width="30" height="30" alt=""> dna CLI & MCP server for AI agents
+
+Our newest tool: <b>dna</b> runs every Domain Name API operation from your terminal and from AI agents. Search, register, renew and transfer domains, manage DNS, DNSSEC, SSL and hosting, with a safety gate that waits for your approval before anything billable.
+
+<a href="https://github.com/domainreseller/cli"><img src="./assets/cli.svg" width="1200" alt="dna CLI: one binary with all 64 Domain Name API operations and 65 MCP tools. A terminal installs dna, connects it to Claude Code, searches brandname.com, previews the billable registration with --dry-run and registers it with --yes."></a>
+
+<p align="center">
+  <a href="https://github.com/domainreseller/cli/releases/latest"><img src="./assets/btn-cli.svg" height="46" alt="Download the dna CLI"></a>
+  <a href="https://github.com/domainreseller/cli#connect-your-ai-agent"><img src="./assets/btn-cli-agent.svg" height="46" alt="Connect your AI agent to dna"></a>
+  <a href="https://github.com/domainreseller/cli#readme"><img src="./assets/btn-cli-docs.svg" height="46" alt="dna CLI documentation"></a>
+</p>
+
+```bash
+# Install on Linux / macOS
+curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.sh | sh
+
+# Connect Claude Code (start in the OTE test environment)
+claude mcp add dna -- dna mcp serve --env ote
+```
+
+```powershell
+# Install on Windows (PowerShell)
+irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
+```
+
+### Ready-made prompts for Claude and ChatGPT
+
+Copy a prompt, paste it into your AI assistant and let it do the work. Every prompt starts in the OTE test environment and stops for your approval before anything billable.
+
+**Set up dna in Claude Code**
+
+```text
+Set up the dna CLI for me (https://github.com/domainreseller/cli).
+1. Install it with the official install script for my operating system, then run
+   `dna version` and `dna doctor`.
+2. Install the Claude Code skill with `dna agent skill --install` and add the MCP
+   server with `claude mcp add dna -- dna mcp serve --env ote`.
+3. Don't ask me to paste my API key into this chat. Tell me to run
+   `dna auth login --env ote` myself, then check the connection with
+   `dna --ote account get`.
+Work only in the OTE test environment and never use `--yes` without my approval.
+```
+
+**Set up dna in ChatGPT Codex**
+
+```text
+Set up the dna CLI for me (https://github.com/domainreseller/cli).
+1. Install it with the official install script for my operating system, then run
+   `dna version` and `dna doctor`.
+2. Add it to my Codex config (`~/.codex/config.toml`) as an MCP server named `dna`
+   with the command `dna` and the arguments `mcp serve --env ote`.
+3. Don't ask me to paste my API key into this chat. Tell me to run
+   `dna auth login --env ote` myself, then check the connection with
+   `dna --ote account get`.
+Work only in the OTE test environment and never use `--yes` without my approval.
+```
+
+**No terminal? Ask ChatGPT or Claude chat**
+
+```text
+Read https://raw.githubusercontent.com/domainreseller/cli/main/llms.txt and the dna
+docs it links to. Then give me the exact dna commands, step by step, to register a
+domain in the OTE test environment: install, log in, search, preview with `--dry-run`
+and register. Explain what each command does.
+```
+
+<details>
+<summary><b>More prompts for everyday work</b></summary>
+<br>
+
+**Find and register a domain**
+
+```text
+With dna, check whether brandname.com, brandname.net and brandname.io are available.
+Show the results with prices in a table, then preview the registration of the cheapest
+available one with `--dry-run`. Don't register anything until I say yes.
+```
+
+**Upcoming renewals**
+
+```text
+With dna, list my domains that expire in the next 60 days with their renewal prices,
+sorted by expiry date. Don't renew anything.
+```
+
+**Point a domain to a server**
+
+```text
+With dna, point example.com to 203.0.113.10: add A records for `@` and `www`, then
+show me the final DNS zone. Ask me before changing or deleting any existing record.
+```
+
+**Transfer a domain in**
+
+```text
+With dna, check whether example.org can be transferred to my account, tell me what I
+still need (auth code, unlocking) and preview the transfer with `--dry-run`.
+```
+
+**Order an SSL certificate**
+
+```text
+With dna, find the cheapest DV SSL certificate for example.com, create a CSR and
+preview the order. Wait for my approval before buying.
+```
+
+</details>
 
 ## <img src="./assets/h-programs.svg" width="30" height="30" alt=""> Domain, SSL & hosting reseller programs
 
@@ -281,6 +393,12 @@ A domain reseller sells domain names to their own customers, under their own bra
 <summary><b>How do I become a domain reseller with Domain Name API?</b></summary>
 <br>
 Sign up on the <a href="https://www.domainnameapi.com/domain-reseller">Domain Reseller page</a>. There's no setup fee and no minimum deposit. Then take your <b>Reseller ID</b> and <b>API Key</b> from <b>API Settings</b> in your panel, install the module for your billing panel from the list above and start selling.
+</details>
+
+<details>
+<summary><b>Can an AI agent manage my domains?</b></summary>
+<br>
+Yes. The <a href="https://github.com/domainreseller/cli">dna CLI</a> exposes every Domain Name API operation as an MCP tool for Claude Code, Cursor, Codex and other MCP clients. Billable and destructive calls wait for your approval, and with <code>--env ote</code> agents practise in the test environment first.
 </details>
 
 <details>

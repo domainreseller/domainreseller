@@ -25,9 +25,115 @@
   <b>Domain Name API</b> 是由 <a href="https://www.atakdomain.com">Atak Domain</a> 创立的 ICANN 认证域名注册商及<b>域名代理（domain reseller）</b>计划。加入<a href="https://www.domainnameapi.com/zh/yuming-zhuce">来自 200+ 个国家的 40,000+ 名域名代理商</a>，以您自己的品牌销售 830+ 种域名后缀，并通过我们的<a href="https://www.domainnameapi.com/zh/domain-api-jicheng">域名代理 API</a>或下方适用于 WHMCS、WiseCP、Blesta、HostBill、ClientExec、FOSSBilling 和 HostFact 的现成模块，自动完成域名注册、转移和续费。
 </p>
 
+<p align="center">
+  <a href="https://github.com/domainreseller/cli"><img src="./assets/cli-ribbon.svg" width="760" alt="全新推出：dna，Domain Name API 的命令行工具与 MCP 服务器。在终端、Claude Code、Cursor 和 Codex 中管理域名。"></a>
+</p>
+
 <img src="./assets/stats.svg" width="1200" alt="830+ 种域名后缀、40,000+ 名活跃域名代理商、200+ 个国家、20+ 年行业经验。">
 
 <img src="./assets/tlds.svg" width="1200" alt="您可以销售的 830+ 种域名后缀中的一部分：.com、.net、.org、.com.tr、.xyz、.shop 等。">
+
+## <img src="./assets/h-cli.svg" width="30" height="30" alt=""> dna CLI：面向 AI 智能体的命令行与 MCP 服务器
+
+我们的最新工具 <b>dna</b> 让您在终端和 AI 智能体中执行 Domain Name API 的全部操作：查询、注册、续费和转移域名，管理 DNS、DNSSEC、SSL 和主机。任何付费操作执行前，安全闸门都会先等待您的确认。
+
+<a href="https://github.com/domainreseller/cli"><img src="./assets/cli.svg" width="1200" alt="dna CLI：单个可执行文件，涵盖 Domain Name API 全部 64 项操作和 65 个 MCP 工具。终端中安装 dna、连接 Claude Code、查询 brandname.com、用 --dry-run 预览付费注册，再用 --yes 完成注册。"></a>
+
+<p align="center">
+  <a href="https://github.com/domainreseller/cli/releases/latest"><img src="./assets/btn-cli.svg" height="46" alt="下载 dna CLI"></a>
+  <a href="https://github.com/domainreseller/cli#connect-your-ai-agent"><img src="./assets/btn-cli-agent.svg" height="46" alt="将您的 AI 智能体连接到 dna"></a>
+  <a href="https://github.com/domainreseller/cli#readme"><img src="./assets/btn-cli-docs.svg" height="46" alt="dna CLI 文档"></a>
+</p>
+
+```bash
+# 在 Linux / macOS 上安装
+curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.sh | sh
+
+# 连接 Claude Code（建议先在 OTE 测试环境中使用）
+claude mcp add dna -- dna mcp serve --env ote
+```
+
+```powershell
+# 在 Windows 上安装（PowerShell）
+irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
+```
+
+### 适用于 Claude 和 ChatGPT 的现成提示词
+
+复制一条提示词，粘贴到您的 AI 助手中，让它替您完成工作。每条提示词都从 OTE 测试环境开始，并会在任何付费操作之前停下来等待您的确认。
+
+**在 Claude Code 中设置 dna**
+
+```text
+请帮我安装配置 dna CLI (https://github.com/domainreseller/cli)。
+1. 使用适合我操作系统的官方安装脚本安装，然后运行 `dna version` 和 `dna doctor`。
+2. 用 `dna agent skill --install` 安装 Claude Code 技能，并用
+   `claude mcp add dna -- dna mcp serve --env ote` 添加 MCP 服务器。
+3. 不要要求我把 API 密钥粘贴到这个对话中。提示我自己运行 `dna auth login --env ote`，
+   然后用 `dna --ote account get` 检查连接。
+只在 OTE 测试环境中操作，未经我同意，绝不要使用 `--yes`。
+```
+
+**在 ChatGPT Codex 中设置 dna**
+
+```text
+请帮我安装配置 dna CLI (https://github.com/domainreseller/cli)。
+1. 使用适合我操作系统的官方安装脚本安装，然后运行 `dna version` 和 `dna doctor`。
+2. 把它作为 MCP 服务器添加到我的 Codex 配置 (`~/.codex/config.toml`) 中：名称为 `dna`，
+   命令为 `dna`，参数为 `mcp serve --env ote`。
+3. 不要要求我把 API 密钥粘贴到这个对话中。提示我自己运行 `dna auth login --env ote`，
+   然后用 `dna --ote account get` 检查连接。
+只在 OTE 测试环境中操作，未经我同意，绝不要使用 `--yes`。
+```
+
+**没有终端？在 ChatGPT 或 Claude 聊天中提问**
+
+```text
+请阅读 https://raw.githubusercontent.com/domainreseller/cli/main/llms.txt 及其中链接的
+dna 文档。然后一步一步地给出在 OTE 测试环境中注册域名的确切 dna 命令：安装、登录、查询、
+用 `--dry-run` 预览，以及注册。解释每条命令的作用。
+```
+
+<details>
+<summary><b>更多日常工作提示词</b></summary>
+<br>
+
+**查询并注册域名**
+
+```text
+用 dna 检查 brandname.com、brandname.net 和 brandname.io 是否可以注册。用表格列出结果
+和价格，然后用 `--dry-run` 预览注册其中最便宜的可注册域名。在我同意之前，什么都不要注
+册。
+```
+
+**近期续费**
+
+```text
+用 dna 列出我未来 60 天内到期的域名及其续费价格，按到期日期排序。什么都不要续费。
+```
+
+**将域名指向服务器**
+
+```text
+用 dna 将 example.com 指向 203.0.113.10：为 `@` 和 `www` 添加 A 记录，然后给我看最终的
+DNS 区域。修改或删除任何现有记录之前，先问我。
+```
+
+**转入域名**
+
+```text
+用 dna 检查 example.org 能否转入我的账户，告诉我还缺什么（授权码、解锁），并用
+`--dry-run` 预览转入。
+```
+
+**订购 SSL 证书**
+
+```text
+用 dna 为 example.com 找到最便宜的 DV SSL 证书，生成 CSR 并预览订单。购买前等待我的确
+认。
+```
+
+</details>
 
 ## <img src="./assets/h-programs.svg" width="30" height="30" alt=""> 域名、SSL 与主机代理计划
 
@@ -281,6 +387,12 @@ result := client.CheckAvailability([]string{"hello", "world123x0"}, []string{"co
 <summary><b>如何通过 Domain Name API 成为域名代理商？</b></summary>
 <br>
 在<a href="https://www.domainnameapi.com/zh/yuming-zhuce">域名代理页面</a>注册。无需开户费，也没有最低预存款要求。然后在面板的 <b>API 设置 (API Settings)</b> 中获取您的 <b>Reseller ID</b> 和 <b>API Key</b>，从上方列表中为您的计费系统安装对应模块，即可开始销售域名。
+</details>
+
+<details>
+<summary><b>AI 智能体可以管理我的域名吗？</b></summary>
+<br>
+可以。<a href="https://github.com/domainreseller/cli">dna CLI</a> 将 Domain Name API 的每项操作都作为 MCP 工具提供给 Claude Code、Cursor、Codex 及其他 MCP 客户端。付费和不可逆的操作会等待您的确认，使用 <code>--env ote</code> 时智能体会先在测试环境中运行。
 </details>
 
 <details>

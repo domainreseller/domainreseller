@@ -25,9 +25,126 @@
   <b>Domain Name API</b> is een ICANN-geaccrediteerde registrar en een programma voor <b>domeinnaam resellers</b>, opgericht door <a href="https://www.atakdomain.com">Atak Domain</a>. Sluit u aan bij <a href="https://www.domainnameapi.com/nl/domein-reseller">meer dan 40.000 domein resellers in ruim 200 landen</a>, verkoop ruim 830 domeinextensies onder uw eigen merk en automatiseer registratie, verhuizing en verlenging met onze <a href="https://www.domainnameapi.com/nl/domain-api-integratie">domeinnaam reseller API</a> of de kant-en-klare modules voor WHMCS, WiseCP, Blesta, HostBill, ClientExec, FOSSBilling en HostFact hieronder.
 </p>
 
+<p align="center">
+  <a href="https://github.com/domainreseller/cli"><img src="./assets/cli-ribbon.svg" width="760" alt="Nieuw: dna, de CLI en MCP-server van Domain Name API. Beheer domeinen vanuit uw terminal, Claude Code, Cursor en Codex."></a>
+</p>
+
 <img src="./assets/stats.svg" width="1200" alt="830+ TLD's, 40.000+ actieve domein resellers, 200+ landen, 20+ jaar ervaring.">
 
 <img src="./assets/tlds.svg" width="1200" alt="Enkele van de 830+ extensies die u kunt verkopen: .com, .net, .org, .com.tr, .xyz, .shop en meer.">
+
+## <img src="./assets/h-cli.svg" width="30" height="30" alt=""> dna CLI & MCP-server voor AI-agents
+
+Onze nieuwste tool: <b>dna</b> voert elke Domain Name API-bewerking uit vanuit uw terminal en vanuit AI-agents. Zoek, registreer, verleng en verhuis domeinen en beheer DNS, DNSSEC, SSL en hosting, met een veiligheidspoort die op uw goedkeuring wacht voordat er iets betaalds gebeurt.
+
+<a href="https://github.com/domainreseller/cli"><img src="./assets/cli.svg" width="1200" alt="dna CLI: één binary met alle 64 Domain Name API-bewerkingen en 65 MCP-tools. Een terminal installeert dna, koppelt het aan Claude Code, zoekt brandname.com, toont de betaalde registratie als voorbeeld met --dry-run en registreert die met --yes."></a>
+
+<p align="center">
+  <a href="https://github.com/domainreseller/cli/releases/latest"><img src="./assets/btn-cli.svg" height="46" alt="Download de dna CLI"></a>
+  <a href="https://github.com/domainreseller/cli#connect-your-ai-agent"><img src="./assets/btn-cli-agent.svg" height="46" alt="Koppel uw AI-agent aan dna"></a>
+  <a href="https://github.com/domainreseller/cli#readme"><img src="./assets/btn-cli-docs.svg" height="46" alt="Documentatie van de dna CLI"></a>
+</p>
+
+```bash
+# Installeren op Linux / macOS
+curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.sh | sh
+
+# Koppelen aan Claude Code (begin in de OTE-testomgeving)
+claude mcp add dna -- dna mcp serve --env ote
+```
+
+```powershell
+# Installeren op Windows (PowerShell)
+irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
+```
+
+### Kant-en-klare prompts voor Claude en ChatGPT
+
+Kopieer een prompt, plak die in uw AI-assistent en laat de assistent het werk doen. Elke prompt begint in de OTE-testomgeving en wacht op uw goedkeuring voordat er iets betaalds gebeurt.
+
+**dna instellen in Claude Code**
+
+```text
+Zet de dna CLI voor me op (https://github.com/domainreseller/cli).
+1. Installeer hem met het officiële installatiescript voor mijn besturingssysteem en
+   voer daarna `dna version` en `dna doctor` uit.
+2. Installeer de skill voor Claude Code met `dna agent skill --install` en voeg de
+   MCP-server toe met `claude mcp add dna -- dna mcp serve --env ote`.
+3. Vraag me niet om mijn API-key in deze chat te plakken. Zeg me dat ik
+   `dna auth login --env ote` zelf moet uitvoeren en controleer daarna de verbinding
+   met `dna --ote account get`.
+Werk alleen in de OTE-testomgeving en gebruik nooit `--yes` zonder mijn goedkeuring.
+```
+
+**dna instellen in ChatGPT Codex**
+
+```text
+Zet de dna CLI voor me op (https://github.com/domainreseller/cli).
+1. Installeer hem met het officiële installatiescript voor mijn besturingssysteem en
+   voer daarna `dna version` en `dna doctor` uit.
+2. Voeg hem toe aan mijn Codex-configuratie (`~/.codex/config.toml`) als MCP-server
+   met de naam `dna`, het commando `dna` en de argumenten `mcp serve --env ote`.
+3. Vraag me niet om mijn API-key in deze chat te plakken. Zeg me dat ik
+   `dna auth login --env ote` zelf moet uitvoeren en controleer daarna de verbinding
+   met `dna --ote account get`.
+Werk alleen in de OTE-testomgeving en gebruik nooit `--yes` zonder mijn goedkeuring.
+```
+
+**Geen terminal? Vraag het aan ChatGPT of Claude in de chat**
+
+```text
+Lees https://raw.githubusercontent.com/domainreseller/cli/main/llms.txt en de
+dna-documentatie waarnaar daar wordt gelinkt. Geef me daarna stap voor stap de exacte
+dna-commando's om een domeinnaam te registreren in de OTE-testomgeving: installeren,
+inloggen, zoeken, als voorbeeld tonen met `--dry-run` en registreren. Leg uit wat elk
+commando doet.
+```
+
+<details>
+<summary><b>Meer prompts voor dagelijks werk</b></summary>
+<br>
+
+**Domeinnaam vinden en registreren**
+
+```text
+Controleer met dna of brandname.com, brandname.net en brandname.io beschikbaar zijn.
+Zet de resultaten met prijzen in een tabel en laat daarna met `--dry-run` een
+voorbeeld zien van de registratie van de goedkoopste beschikbare naam. Registreer
+niets voordat ik ja zeg.
+```
+
+**Aankomende verlengingen**
+
+```text
+Geef met dna een lijst van mijn domeinnamen die in de komende 60 dagen verlopen, met
+hun verlengingsprijzen, gesorteerd op vervaldatum. Verleng niets.
+```
+
+**Domeinnaam naar een server laten verwijzen**
+
+```text
+Laat example.com met dna naar 203.0.113.10 verwijzen: voeg A-records toe voor `@` en
+`www` en laat me daarna de uiteindelijke DNS-zone zien. Vraag het me voordat je een
+bestaand record wijzigt of verwijdert.
+```
+
+**Domeinnaam naar uw account verhuizen**
+
+```text
+Controleer met dna of example.org naar mijn account verhuisd kan worden, vertel me wat
+ik nog nodig heb (authcode, ontgrendeling) en laat met `--dry-run` een voorbeeld van
+de verhuizing zien.
+```
+
+**SSL-certificaat bestellen**
+
+```text
+Zoek met dna het goedkoopste DV-SSL-certificaat voor example.com, maak een CSR aan en
+laat me een voorbeeld van de bestelling zien. Wacht op mijn goedkeuring voordat je het
+koopt.
+```
+
+</details>
 
 ## <img src="./assets/h-programs.svg" width="30" height="30" alt=""> Resellerprogramma's voor domeinen, SSL & hosting
 
@@ -281,6 +398,12 @@ Een domeinnaam reseller (domain reseller) verkoopt domeinnamen aan zijn eigen kl
 <summary><b>Hoe word ik domein reseller bij Domain Name API?</b></summary>
 <br>
 Meld u aan via de <a href="https://www.domainnameapi.com/nl/domein-reseller">domein reseller pagina</a>. Er zijn geen opstartkosten en er is geen minimale storting. Haal daarna uw <b>Reseller ID</b> en <b>API Key</b> op onder <b>API-instellingen (API Settings)</b> in uw panel, installeer de module voor uw factureringssysteem uit de lijst hierboven en begin met verkopen.
+</details>
+
+<details>
+<summary><b>Kan een AI-agent mijn domeinen beheren?</b></summary>
+<br>
+Ja. De <a href="https://github.com/domainreseller/cli">dna CLI</a> biedt elke Domain Name API-bewerking aan als MCP-tool voor Claude Code, Cursor, Codex en andere MCP-clients. Betaalde en destructieve aanroepen wachten op uw goedkeuring, en met <code>--env ote</code> oefenen agents eerst in de testomgeving.
 </details>
 
 <details>

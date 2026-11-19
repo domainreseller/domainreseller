@@ -25,9 +25,153 @@
   <b>Domain Name API</b> مسجّل نطاقات معتمد من ICANN وبرنامج <b>موزعي أسماء النطاقات</b> (domain reseller) أسسته <a href="https://www.atakdomain.com">Atak Domain</a>. انضم إلى <a href="https://www.domainnameapi.com/ar/domain-reseller">40,000+ موزع نطاقات في 200+ دولة</a>، وبِع 830+ امتدادًا للنطاقات تحت علامتك التجارية، وأتمِت تسجيل النطاقات ونقلها وتجديدها عبر <a href="https://www.domainnameapi.com/ar/domain-api-integration">واجهة API لموزعي النطاقات</a> أو الوحدات الجاهزة لأنظمة WHMCS وWiseCP وBlesta وHostBill وClientExec وFOSSBilling وHostFact أدناه.
 </p>
 
+<p align="center">
+  <a href="https://github.com/domainreseller/cli"><img src="./assets/cli-ribbon.svg" width="760" alt="جديد: dna، أداة سطر الأوامر وخادم MCP من Domain Name API. أدِر نطاقاتك من الطرفية ومن Claude Code وCursor وCodex."></a>
+</p>
+
 <img src="./assets/stats.svg" width="1200" alt="830+ امتدادًا، و40,000+ موزع نطاقات نشط، و200+ دولة، و20+ عامًا من الخبرة.">
 
 <img src="./assets/tlds.svg" width="1200" alt="بعض الامتدادات التي يمكنك بيعها من بين 830+ امتدادًا: .com و.net و.org و.com.tr و.xyz و.shop وغيرها.">
+
+## <img src="./assets/h-cli.svg" width="30" height="30" alt=""> أداة dna CLI وخادم MCP لوكلاء الذكاء الاصطناعي
+
+أحدث أدواتنا: <b>dna</b> تنفّذ كل عمليات Domain Name API من الطرفية ومن وكلاء الذكاء الاصطناعي. ابحث عن النطاقات وسجّلها وجدّدها وانقلها، وأدِر DNS وDNSSEC وSSL والاستضافة، مع بوابة أمان تنتظر موافقتك قبل أي عملية مدفوعة.
+
+<a href="https://github.com/domainreseller/cli"><img src="./assets/cli.svg" width="1200" alt="أداة dna CLI: ملف تنفيذي واحد يضم جميع عمليات Domain Name API الـ64 و65 أداة MCP. في الطرفية يُثبَّت dna ويُربط بـ Claude Code، ثم يُبحث عن brandname.com وتُعاين عملية التسجيل المدفوعة بـ --dry-run وتُنفَّذ بـ --yes."></a>
+
+<p align="center">
+  <a href="https://github.com/domainreseller/cli/releases/latest"><img src="./assets/btn-cli.svg" height="46" alt="تنزيل dna CLI"></a>
+  <a href="https://github.com/domainreseller/cli#connect-your-ai-agent"><img src="./assets/btn-cli-agent.svg" height="46" alt="اربط وكيل الذكاء الاصطناعي بـ dna"></a>
+  <a href="https://github.com/domainreseller/cli#readme"><img src="./assets/btn-cli-docs.svg" height="46" alt="توثيق dna CLI"></a>
+</p>
+
+```bash
+# التثبيت على Linux / macOS
+curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.sh | sh
+
+# الربط بـ Claude Code (ابدأ في بيئة الاختبار OTE)
+claude mcp add dna -- dna mcp serve --env ote
+```
+
+```powershell
+# التثبيت على Windows (PowerShell)
+irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
+```
+
+### موجّهات جاهزة لـ Claude وChatGPT
+
+انسخ موجّهًا، والصقه في مساعد الذكاء الاصطناعي لديك، واتركه ينجز العمل. يبدأ كل موجّه في بيئة الاختبار OTE، ويتوقف لانتظار موافقتك قبل أي عملية مدفوعة.
+
+**إعداد dna في Claude Code**
+
+<div dir="rtl">
+
+```text
+قم بإعداد أداة dna CLI لي (https://github.com/domainreseller/cli).
+1. ثبّتها باستخدام سكربت التثبيت الرسمي الخاص بنظام التشغيل لديّ، ثم شغّل
+   ‎`dna version`‎ و‎`dna doctor`‎.
+2. ثبّت مهارة Claude Code باستخدام ‎`dna agent skill --install`‎، وأضف خادم MCP باستخدام
+   ‎`claude mcp add dna -- dna mcp serve --env ote`‎.
+3. لا تطلب مني لصق مفتاح API الخاص بي في هذه المحادثة. اطلب مني تشغيل
+   ‎`dna auth login --env ote`‎ بنفسي، ثم تحقّق من الاتصال باستخدام
+   ‎`dna --ote account get`‎.
+اعمل في بيئة الاختبار OTE فقط، ولا تستخدم ‎`--yes`‎ أبدًا دون موافقتي.
+```
+
+</div>
+
+**إعداد dna في ChatGPT Codex**
+
+<div dir="rtl">
+
+```text
+قم بإعداد أداة dna CLI لي (https://github.com/domainreseller/cli).
+1. ثبّتها باستخدام سكربت التثبيت الرسمي الخاص بنظام التشغيل لديّ، ثم شغّل
+   ‎`dna version`‎ و‎`dna doctor`‎.
+2. أضفها إلى ملف إعدادات Codex لديّ (‎`~/.codex/config.toml`‎) كخادم MCP باسم ‎`dna`‎، على
+   أن يكون الأمر ‎`dna`‎ والوسائط ‎`mcp serve --env ote`‎.
+3. لا تطلب مني لصق مفتاح API الخاص بي في هذه المحادثة. اطلب مني تشغيل
+   ‎`dna auth login --env ote`‎ بنفسي، ثم تحقّق من الاتصال باستخدام
+   ‎`dna --ote account get`‎.
+اعمل في بيئة الاختبار OTE فقط، ولا تستخدم ‎`--yes`‎ أبدًا دون موافقتي.
+```
+
+</div>
+
+**لا تتوفر لديك طرفية؟ اسأل ChatGPT أو Claude عبر الدردشة**
+
+<div dir="rtl">
+
+```text
+اقرأ الملف https://raw.githubusercontent.com/domainreseller/cli/main/llms.txt وصفحات
+توثيق dna التي يحيل إليها. ثم أعطني أوامر dna الدقيقة، خطوةً بخطوة، لتسجيل نطاق في
+بيئة الاختبار OTE: التثبيت، وتسجيل الدخول، والبحث، والمعاينة باستخدام ‎`--dry-run`‎،
+والتسجيل. واشرح ما يفعله كل أمر.
+```
+
+</div>
+
+<details>
+<summary dir="rtl"><b>المزيد من الموجّهات للمهام اليومية</b></summary>
+<br>
+
+**البحث عن نطاق وتسجيله**
+
+<div dir="rtl">
+
+```text
+باستخدام dna، تحقّق مما إذا كانت النطاقات brandname.com وbrandname.net وbrandname.io
+متاحة. اعرض النتائج مع أسعارها في جدول، ثم عاين تسجيل أرخص نطاق متاح منها باستخدام
+‎`--dry-run`‎. لا تسجّل أي شيء حتى أقول نعم.
+```
+
+</div>
+
+**التجديدات القادمة**
+
+<div dir="rtl">
+
+```text
+باستخدام dna، اعرض قائمة بنطاقاتي التي تنتهي صلاحيتها خلال الأيام الـ60 القادمة مع
+أسعار تجديدها، مرتبةً حسب تاريخ الانتهاء. لا تجدّد أي شيء.
+```
+
+</div>
+
+**توجيه نطاق إلى خادم**
+
+<div dir="rtl">
+
+```text
+باستخدام dna، وجّه example.com إلى 203.0.113.10: أضف سجلات A لـ ‎`@`‎ و‎`www`‎، ثم اعرض لي
+منطقة DNS النهائية. اسألني قبل تعديل أي سجل موجود أو حذفه.
+```
+
+</div>
+
+**نقل نطاق إلى حسابك**
+
+<div dir="rtl">
+
+```text
+باستخدام dna، تحقّق مما إذا كان يمكن نقل example.org إلى حسابي، وأخبرني بما لا يزال
+ينقصني (رمز التفويض auth code، وإلغاء القفل)، وعاين عملية النقل باستخدام ‎`--dry-run`‎.
+```
+
+</div>
+
+**طلب شهادة SSL**
+
+<div dir="rtl">
+
+```text
+باستخدام dna، ابحث عن أرخص شهادة DV SSL لـ example.com، وأنشئ CSR، وعاين الطلب. انتظر
+موافقتي قبل الشراء.
+```
+
+</div>
+
+</details>
 
 ## <img src="./assets/h-programs.svg" width="30" height="30" alt=""> برامج موزعي النطاقات وشهادات SSL والاستضافة
 
@@ -281,6 +425,12 @@ result := client.CheckAvailability([]string{"hello", "world123x0"}, []string{"co
 <summary><b>كيف أصبح موزعًا لأسماء النطاقات مع Domain Name API؟</b></summary>
 <br>
 سجّل عبر <a href="https://www.domainnameapi.com/ar/domain-reseller">صفحة موزعي النطاقات</a>. لا توجد رسوم إعداد ولا حد أدنى للإيداع. بعد ذلك احصل على <b>Reseller ID</b> و<b>API Key</b> من <b>إعدادات API (API Settings)</b> في لوحتك، وثبّت وحدة نظام الفوترة الخاص بك من القائمة أعلاه، وابدأ بيع النطاقات.
+</details>
+
+<details dir="rtl">
+<summary><b>هل يمكن لوكيل ذكاء اصطناعي إدارة نطاقاتي؟</b></summary>
+<br>
+نعم. تتيح أداة <a href="https://github.com/domainreseller/cli">dna CLI</a> كل عملية من عمليات Domain Name API كأداة MCP لـ Claude Code وCursor وCodex وغيرها من عملاء MCP. تنتظر العمليات المدفوعة وغير القابلة للتراجع موافقتك، ومع <code>--env ote</code> يتدرّب الوكلاء أولًا في بيئة الاختبار.
 </details>
 
 <details dir="rtl">

@@ -25,9 +25,126 @@
   <b>Domain Name API</b> è un registrar accreditato ICANN e un programma per <b>rivenditori di domini</b> fondato da <a href="https://www.atakdomain.com">Atak Domain</a>. Unisciti a <a href="https://www.domainnameapi.com/it/rivenditore-di-dominio">oltre 40.000 rivenditori di domini in più di 200 paesi</a>, vendi oltre 830 estensioni di dominio con il tuo marchio e automatizza registrazione, trasferimento e rinnovo con la nostra <a href="https://www.domainnameapi.com/it/domain-api-integrazione">API per rivenditori di domini</a> o con i moduli pronti all'uso per WHMCS, WiseCP, Blesta, HostBill, ClientExec, FOSSBilling e HostFact qui sotto.
 </p>
 
+<p align="center">
+  <a href="https://github.com/domainreseller/cli"><img src="./assets/cli-ribbon.svg" width="760" alt="Novità: dna, la CLI e il server MCP di Domain Name API. Gestisci i domini dal terminale, da Claude Code, Cursor e Codex."></a>
+</p>
+
 <img src="./assets/stats.svg" width="1200" alt="Oltre 830 TLD, oltre 40.000 rivenditori di domini attivi, più di 200 paesi e oltre 20 anni di esperienza.">
 
 <img src="./assets/tlds.svg" width="1200" alt="Alcune delle oltre 830 estensioni che puoi vendere: .com, .net, .org, .com.tr, .xyz, .shop e molte altre.">
+
+## <img src="./assets/h-cli.svg" width="30" height="30" alt=""> CLI dna e server MCP per agenti IA
+
+Il nostro strumento più recente: <b>dna</b> esegue ogni operazione di Domain Name API dal terminale e dagli agenti IA. Cerca, registra, rinnova e trasferisci domini, gestisci DNS, DNSSEC, SSL e hosting, con un controllo di sicurezza che attende la tua approvazione prima di qualsiasi operazione a pagamento.
+
+<a href="https://github.com/domainreseller/cli"><img src="./assets/cli.svg" width="1200" alt="CLI dna: un unico binario con tutte le 64 operazioni di Domain Name API e 65 strumenti MCP. Un terminale installa dna, lo collega a Claude Code, cerca brandname.com, mostra un'anteprima della registrazione a pagamento con --dry-run e la esegue con --yes."></a>
+
+<p align="center">
+  <a href="https://github.com/domainreseller/cli/releases/latest"><img src="./assets/btn-cli.svg" height="46" alt="Scarica la CLI dna"></a>
+  <a href="https://github.com/domainreseller/cli#connect-your-ai-agent"><img src="./assets/btn-cli-agent.svg" height="46" alt="Collega il tuo agente IA a dna"></a>
+  <a href="https://github.com/domainreseller/cli#readme"><img src="./assets/btn-cli-docs.svg" height="46" alt="Documentazione della CLI dna"></a>
+</p>
+
+```bash
+# Installazione su Linux / macOS
+curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.sh | sh
+
+# Collega Claude Code (inizia nell'ambiente di test OTE)
+claude mcp add dna -- dna mcp serve --env ote
+```
+
+```powershell
+# Installazione su Windows (PowerShell)
+irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
+```
+
+### Prompt pronti all'uso per Claude e ChatGPT
+
+Copia un prompt, incollalo nel tuo assistente IA e lascia che faccia il lavoro. Ogni prompt inizia nell'ambiente di test OTE e si ferma in attesa della tua approvazione prima di qualsiasi operazione a pagamento.
+
+**Configura dna in Claude Code**
+
+```text
+Configurami la CLI dna (https://github.com/domainreseller/cli).
+1. Installala con lo script di installazione ufficiale per il mio sistema operativo,
+   poi esegui `dna version` e `dna doctor`.
+2. Installa la skill di Claude Code con `dna agent skill --install` e aggiungi il
+   server MCP con `claude mcp add dna -- dna mcp serve --env ote`.
+3. Non chiedermi di incollare la mia chiave API in questa chat. Dimmi di eseguire
+   personalmente `dna auth login --env ote`, poi verifica la connessione con
+   `dna --ote account get`.
+Lavora solo nell'ambiente di test OTE e non usare mai `--yes` senza la mia
+approvazione.
+```
+
+**Configura dna in ChatGPT Codex**
+
+```text
+Configurami la CLI dna (https://github.com/domainreseller/cli).
+1. Installala con lo script di installazione ufficiale per il mio sistema operativo,
+   poi esegui `dna version` e `dna doctor`.
+2. Aggiungila alla mia configurazione di Codex (`~/.codex/config.toml`) come server
+   MCP chiamato `dna`, con il comando `dna` e gli argomenti `mcp serve --env ote`.
+3. Non chiedermi di incollare la mia chiave API in questa chat. Dimmi di eseguire
+   personalmente `dna auth login --env ote`, poi verifica la connessione con
+   `dna --ote account get`.
+Lavora solo nell'ambiente di test OTE e non usare mai `--yes` senza la mia
+approvazione.
+```
+
+**Niente terminale? Chiedi a ChatGPT o a Claude in chat**
+
+```text
+Leggi https://raw.githubusercontent.com/domainreseller/cli/main/llms.txt e la
+documentazione di dna a cui rimanda. Poi dammi i comandi dna esatti, passo dopo passo,
+per registrare un dominio nell'ambiente di test OTE: installazione, accesso, ricerca,
+anteprima con `--dry-run` e registrazione. Spiega cosa fa ogni comando.
+```
+
+<details>
+<summary><b>Altri prompt per il lavoro di tutti i giorni</b></summary>
+<br>
+
+**Trova e registra un dominio**
+
+```text
+Con dna, controlla se brandname.com, brandname.net e brandname.io sono disponibili.
+Mostra i risultati con i prezzi in una tabella, poi fai l'anteprima della
+registrazione del più economico tra quelli disponibili con `--dry-run`. Non registrare
+nulla finché non ti dico di sì.
+```
+
+**Prossimi rinnovi**
+
+```text
+Con dna, elenca i miei domini che scadono nei prossimi 60 giorni con i prezzi di
+rinnovo, ordinati per data di scadenza. Non rinnovare nulla.
+```
+
+**Fai puntare un dominio a un server**
+
+```text
+Con dna, fai puntare example.com a 203.0.113.10: aggiungi record A per `@` e `www`,
+poi mostrami la zona DNS finale. Chiedimi prima di modificare o eliminare qualsiasi
+record esistente.
+```
+
+**Trasferisci un dominio sul tuo account**
+
+```text
+Con dna, controlla se example.org può essere trasferito sul mio account, dimmi cosa mi
+serve ancora (codice di autorizzazione, sblocco) e fai l'anteprima del trasferimento
+con `--dry-run`.
+```
+
+**Ordina un certificato SSL**
+
+```text
+Con dna, trova il certificato DV SSL più economico per example.com, crea una CSR e fai
+l'anteprima dell'ordine. Aspetta la mia approvazione prima di acquistare.
+```
+
+</details>
 
 ## <img src="./assets/h-programs.svg" width="30" height="30" alt=""> Programmi reseller per domini, SSL e hosting
 
@@ -281,6 +398,12 @@ Un rivenditore di domini (domain reseller) vende nomi di dominio ai propri clien
 <summary><b>Come diventare rivenditore di domini con Domain Name API?</b></summary>
 <br>
 Registrati sulla <a href="https://www.domainnameapi.com/it/rivenditore-di-dominio">pagina Rivenditore di domini</a>. Nessun costo di attivazione e nessun deposito minimo. Poi prendi il tuo <b>Reseller ID</b> e la tua <b>API Key</b> da <b>Impostazioni API (API Settings)</b> nel tuo pannello, installa il modulo per la tua piattaforma di fatturazione dall'elenco qui sopra e inizia a vendere.
+</details>
+
+<details>
+<summary><b>Un agente IA può gestire i miei domini?</b></summary>
+<br>
+Sì. La <a href="https://github.com/domainreseller/cli">CLI dna</a> espone ogni operazione di Domain Name API come strumento MCP per Claude Code, Cursor, Codex e altri client MCP. Le chiamate a pagamento e distruttive attendono la tua approvazione e con <code>--env ote</code> gli agenti si esercitano prima nell'ambiente di test.
 </details>
 
 <details>

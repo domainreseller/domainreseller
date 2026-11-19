@@ -25,9 +25,124 @@
   <b>Domain Name API</b> <a href="https://www.atakdomain.com">Atak Domain</a> tərəfindən yaradılmış ICANN akkreditasiyalı registrator və <b>domen satıcılığı (domain reseller)</b> proqramıdır. <a href="https://www.domainnameapi.com/az/domain-reseller">200+ ölkədən 40.000+ domen satıcısına</a> qoşulun, 830+ domen uzantısını öz brendiniz altında satın, qeydiyyat, transfer və yeniləmə əməliyyatlarını <a href="https://www.domainnameapi.com/az/domain-api-inteqrasiyasi">domen reseller API-miz</a> və ya aşağıdakı WHMCS, WiseCP, Blesta, HostBill, ClientExec, FOSSBilling və HostFact üçün hazır modullar vasitəsilə avtomatlaşdırın.
 </p>
 
+<p align="center">
+  <a href="https://github.com/domainreseller/cli"><img src="./assets/cli-ribbon.svg" width="760" alt="Yeni: dna, Domain Name API-nin CLI aləti və MCP serveri. Domenlərinizi terminaldan, Claude Code, Cursor və Codex-dən idarə edin."></a>
+</p>
+
 <img src="./assets/stats.svg" width="1200" alt="830+ TLD, 40.000+ aktiv domen satıcısı, 200+ ölkə, 20+ illik təcrübə.">
 
 <img src="./assets/tlds.svg" width="1200" alt="Sata biləcəyiniz 830+ uzantıdan bəziləri: .com, .net, .org, .com.tr, .xyz, .shop və daha çoxu.">
+
+## <img src="./assets/h-cli.svg" width="30" height="30" alt=""> dna CLI və AI agentləri üçün MCP server
+
+Ən yeni alətimiz <b>dna</b> Domain Name API-nin bütün əməliyyatlarını terminalınızdan və AI agentlərinizdən icra edir. Domen axtarın, qeydiyyatdan keçirin, yeniləyin və transfer edin; DNS, DNSSEC, SSL və hostinqi idarə edin. Ödənişli əməliyyatdan əvvəl təhlükəsizlik qapısı həmişə təsdiqinizi gözləyir.
+
+<a href="https://github.com/domainreseller/cli"><img src="./assets/cli.svg" width="1200" alt="dna CLI: Domain Name API-nin 64 əməliyyatının hamısını və 65 MCP alətini əhatə edən tək fayl. Terminalda dna quraşdırılır, Claude Code-a qoşulur, brandname.com axtarılır, ödənişli qeydiyyat --dry-run ilə önizlənir və --yes ilə tamamlanır."></a>
+
+<p align="center">
+  <a href="https://github.com/domainreseller/cli/releases/latest"><img src="./assets/btn-cli.svg" height="46" alt="dna CLI-ni yükləyin"></a>
+  <a href="https://github.com/domainreseller/cli#connect-your-ai-agent"><img src="./assets/btn-cli-agent.svg" height="46" alt="AI agentinizi dna-ya qoşun"></a>
+  <a href="https://github.com/domainreseller/cli#readme"><img src="./assets/btn-cli-docs.svg" height="46" alt="dna CLI sənədləri"></a>
+</p>
+
+```bash
+# Linux / macOS-da quraşdırma
+curl -fsSL https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.sh | sh
+
+# Claude Code-a qoşun (əvvəlcə OTE test mühitində başlayın)
+claude mcp add dna -- dna mcp serve --env ote
+```
+
+```powershell
+# Windows-da quraşdırma (PowerShell)
+irm https://raw.githubusercontent.com/domainreseller/cli/main/scripts/install.ps1 | iex
+```
+
+### Claude və ChatGPT üçün hazır promptlar
+
+Promptu kopyalayın, AI assistentinizə yapışdırın və işi ona həvalə edin. Hər prompt OTE test mühitində başlayır və ödənişli əməliyyatdan əvvəl dayanıb təsdiqinizi gözləyir.
+
+**dna-nı Claude Code-da quraşdırın**
+
+```text
+Mənim üçün dna CLI-ni quraşdır (https://github.com/domainreseller/cli).
+1. Onu əməliyyat sistemimə uyğun rəsmi quraşdırma skripti ilə quraşdır, sonra
+   `dna version` və `dna doctor` əmrlərini işə sal.
+2. Claude Code skill-ini `dna agent skill --install` ilə quraşdır və MCP serverini
+   `claude mcp add dna -- dna mcp serve --env ote` ilə əlavə et.
+3. API açarımı bu söhbətə yapışdırmağımı istəmə. `dna auth login --env ote` əmrini
+   özüm işə salmağımı söylə, sonra bağlantını `dna --ote account get` ilə yoxla.
+Yalnız OTE test mühitində işlə və mənim təsdiqim olmadan heç vaxt `--yes`
+parametrindən istifadə etmə.
+```
+
+**dna-nı ChatGPT Codex-də quraşdırın**
+
+```text
+Mənim üçün dna CLI-ni quraşdır (https://github.com/domainreseller/cli).
+1. Onu əməliyyat sistemimə uyğun rəsmi quraşdırma skripti ilə quraşdır, sonra
+   `dna version` və `dna doctor` əmrlərini işə sal.
+2. Onu Codex konfiqurasiyama (`~/.codex/config.toml`) `dna` adlı MCP server kimi əlavə
+   et: əmr `dna`, arqumentlər `mcp serve --env ote`.
+3. API açarımı bu söhbətə yapışdırmağımı istəmə. `dna auth login --env ote` əmrini
+   özüm işə salmağımı söylə, sonra bağlantını `dna --ote account get` ilə yoxla.
+Yalnız OTE test mühitində işlə və mənim təsdiqim olmadan heç vaxt `--yes`
+parametrindən istifadə etmə.
+```
+
+**Terminalınız yoxdur? ChatGPT və ya Claude söhbətində soruşun**
+
+```text
+https://raw.githubusercontent.com/domainreseller/cli/main/llms.txt faylını və onun
+keçid verdiyi dna sənədlərini oxu. Sonra OTE test mühitində bir domeni qeydiyyatdan
+keçirmək üçün lazım olan dəqiq dna əmrlərini addım-addım ver: quraşdırma, giriş,
+axtarış, `--dry-run` ilə önizləmə və qeydiyyat. Hər əmrin nə etdiyini izah et.
+```
+
+<details>
+<summary><b>Gündəlik işlər üçün daha çox prompt</b></summary>
+<br>
+
+**Domen tapın və qeydiyyatdan keçirin**
+
+```text
+dna ilə brandname.com, brandname.net və brandname.io domenlərinin boş olub-olmadığını
+yoxla. Nəticələri qiymətləri ilə birlikdə cədvəldə göstər, sonra boş olanlardan ən
+ucuzunun qeydiyyatını `--dry-run` ilə önizlə. Mən hə deyənə qədər heç nəyi
+qeydiyyatdan keçirmə.
+```
+
+**Yaxınlaşan yeniləmələr**
+
+```text
+dna ilə növbəti 60 gün ərzində müddəti bitəcək domenlərimi yeniləmə qiymətləri ilə
+birlikdə, bitmə tarixinə görə sıralayaraq sadala. Heç nəyi yeniləmə.
+```
+
+**Domeni serverə yönləndirin**
+
+```text
+dna ilə example.com domenini 203.0.113.10 ünvanına yönləndir: `@` və `www` üçün A
+qeydləri əlavə et, sonra mənə son DNS zonasını göstər. Hər hansı mövcud qeydi
+dəyişməzdən və ya silməzdən əvvəl məndən soruş.
+```
+
+**Domeni hesabınıza transfer edin**
+
+```text
+dna ilə example.org domeninin hesabıma transfer edilə bilib-bilmədiyini yoxla, mənə
+hələ nələrin lazım olduğunu de (auth kodu, kilidin açılması) və transferi `--dry-run`
+ilə önizlə.
+```
+
+**SSL sertifikatı sifariş edin**
+
+```text
+dna ilə example.com üçün ən ucuz DV SSL sertifikatını tap, CSR yarat və sifarişi
+önizlə. Almazdan əvvəl təsdiqimi gözlə.
+```
+
+</details>
 
 ## <img src="./assets/h-programs.svg" width="30" height="30" alt=""> Domen, SSL və hostinq satıcılığı proqramları
 
@@ -281,6 +396,12 @@ Domen satıcısı domen adlarını öz brendi və öz qiymətləri ilə öz mü�
 <summary><b>Domain Name API ilə necə domen satıcısı ola bilərəm?</b></summary>
 <br>
 <a href="https://www.domainnameapi.com/az/domain-reseller">Domen Satıcılığı səhifəsində</a> qeydiyyatdan keçin. Quraşdırma haqqı və minimum depozit tələbi yoxdur. Sonra panelinizdəki <b>API Tənzimləmələri (API Settings)</b> bölməsindən <b>Reseller ID</b> və <b>API Key</b> məlumatlarınızı götürün, yuxarıdakı siyahıdan billinq paneliniz üçün modulu quraşdırın və satışa başlayın.
+</details>
+
+<details>
+<summary><b>AI agenti domenlərimi idarə edə bilərmi?</b></summary>
+<br>
+Bəli. <a href="https://github.com/domainreseller/cli">dna CLI</a> Domain Name API-nin hər əməliyyatını Claude Code, Cursor, Codex və digər MCP müştəriləri üçün MCP aləti kimi təqdim edir. Ödənişli və geri qaytarılmaz əməliyyatlar təsdiqinizi gözləyir, <code>--env ote</code> ilə isə agentlər əvvəlcə test mühitində işləyir.
 </details>
 
 <details>
